@@ -1,0 +1,103 @@
+=================================================
+               CCF TCARCH Self-Test              
+=================================================
+Job started on mi100-1 at Thu Sep 11 06:59:17 AM UTC 2025
+
+STEP 1: Compiling source code...
+kernel.hip:190:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  190 |     hipMalloc(&d_edges, edges_size);
+      |     ^~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+kernel.hip:191:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  191 |     hipMalloc(&d_dist, dist_size);
+      |     ^~~~~~~~~ ~~~~~~~~~~~~~~~~~~
+kernel.hip:194:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  194 |     hipMemcpy(d_edges, edges, edges_size, hipMemcpyHostToDevice);
+      |     ^~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kernel.hip:200:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  200 |     hipDeviceSynchronize();
+      |     ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:206:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  206 |     hipDeviceSynchronize();
+      |     ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:217:9: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  217 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:222:9: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  222 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:226:9: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  226 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:231:9: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  231 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:235:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  235 |     hipMemcpy(result, d_dist, dist_size, hipMemcpyDeviceToHost);
+      |     ^~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kernel.hip:238:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  238 |     hipFree(d_edges);
+      |     ^~~~~~~ ~~~~~~~
+kernel.hip:239:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  239 |     hipFree(d_dist);
+      |     ^~~~~~~ ~~~~~~
+12 warnings generated when compiling for gfx908.
+kernel.hip:190:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  190 |     hipMalloc(&d_edges, edges_size);
+      |     ^~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~
+kernel.hip:191:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  191 |     hipMalloc(&d_dist, dist_size);
+      |     ^~~~~~~~~ ~~~~~~~~~~~~~~~~~~
+kernel.hip:194:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  194 |     hipMemcpy(d_edges, edges, edges_size, hipMemcpyHostToDevice);
+      |     ^~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kernel.hip:200:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  200 |     hipDeviceSynchronize();
+      |     ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:206:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  206 |     hipDeviceSynchronize();
+      |     ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:217:9: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  217 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:222:9: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  222 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:226:9: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  226 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:231:9: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  231 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~
+kernel.hip:235:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  235 |     hipMemcpy(result, d_dist, dist_size, hipMemcpyDeviceToHost);
+      |     ^~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kernel.hip:238:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  238 |     hipFree(d_edges);
+      |     ^~~~~~~ ~~~~~~~
+kernel.hip:239:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  239 |     hipFree(d_dist);
+      |     ^~~~~~~ ~~~~~~
+12 warnings generated when compiling for host.
+Compilation successful. Executable 'apsp' created.
+
+STEP 2: Running test cases...
+Found 10 test cases in testcases
+-------------------------------------------------
+Running test [10]... PASS (0.50s)
+Running test [1]... PASS (0.48s)
+Running test [2]... PASS (0.48s)
+Running test [3]... PASS (0.47s)
+Running test [4]... PASS (0.48s)
+Running test [5]... PASS (0.48s)
+Running test [6]... PASS (0.46s)
+Running test [7]... PASS (7.55s)
+Running test [8]... PASS (2.87s)
+Running test [9]... PASS (0.51s)
+-------------------------------------------------
+FINAL RESULT: ALL TESTS PASSED!
+
+    Passed cases: 10 / 10
+    Total execution time: 14.28 seconds
+
+Job finished at Thu Sep 11 07:00:15 AM UTC 2025
+=================================================
