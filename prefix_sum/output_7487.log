@@ -1,0 +1,29 @@
+=================================================
+               CCF TCARCH Self-Test              
+=================================================
+Job started on mi100-1 at Thu Sep 11 08:46:40 AM UTC 2025
+
+STEP 1: Compiling source code...
+Compilation successful. Executable 'prefix_sum' created.
+
+STEP 2: Running test cases...
+Found 10 test cases in testcases
+-------------------------------------------------
+Running test [10]... PASS (0.70s)
+Running test [1]... PASS (0.01s)
+Running test [2]... PASS (0.01s)
+Running test [3]... PASS (0.01s)
+Running test [4]... PASS (0.01s)
+Running test [5]... PASS (0.01s)
+Running test [6]... PASS (0.01s)
+Running test [7]... PASS (0.01s)
+Running test [8]... PASS (0.54s)
+Running test [9]... PASS (0.70s)
+-------------------------------------------------
+FINAL RESULT: ALL TESTS PASSED!
+
+    Passed cases: 10 / 10
+    Total execution time: 2.01 seconds
+
+Job finished at Thu Sep 11 08:46:48 AM UTC 2025
+=================================================
